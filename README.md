@@ -21,6 +21,6 @@ To run the application locally, follow these steps:
 - Clone the repository to your local machine.
 - Open the index.html file in a web browser.
 
-  # Live Demo
-  Link: https://alizadekh.github.io/Weather-App/
+# Live Demo
+Link: https://alizadekh.github.io/Weather-App/
 
