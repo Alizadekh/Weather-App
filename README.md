@@ -8,6 +8,7 @@ This is a simple weather application that displays the current weather informati
 # Technologies Used
 - HTML
 - CSS
+- SASS
 - JavaScript
 - Fetch API
 - WeatherAPI
@@ -17,5 +18,9 @@ By default, the current weather information for Baku, Azerbaijan will be display
 To search for weather information for a different location, enter the location name in the search bar and press Enter or click the search button.
 # Installation
 To run the application locally, follow these steps:
-Clone the repository to your local machine.
-Open the index.html file in a web browser.
+- Clone the repository to your local machine.
+- Open the index.html file in a web browser.
+
+  # Live Demo
+  Link: https://alizadekh.github.io/Weather-App/
+
