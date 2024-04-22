@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-1">
+        <div class="input-search">
+          <input type="text" id="search" />
+          <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="info-box">
+          <div class="top">
+            <div class="glass intro">
+              <p>Hello, <br />Dear Customer</p>
+              <p>Today is <span id="date"></span></p>
+              <p>"Money can buy happiness, but not today's weather."</p>
+            </div>
+            <div class="glass weather">
+              <div class="left">
+                <div class="icon">
+                  <img
+                    id="icon"
+                    src="./assets/img/animated/cloudy-day-1.svg"
+                    alt="" />
+                </div>
+                <div class="stat temprature">
+                  <p><span id="temp">23</span>°C</p>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="stat location">
+                <i class="fa-regular fa-compass"></i>
+                <p id="inputLoc">Baku</p>
+              </div>
+              <div class="stat water">
+                <i class="fa-solid fa-droplet"></i>
+                <p><span id="humidity">53</span> %</p>
+              </div>
+              <div class="stat wind">
+                <i class="fa-solid fa-wind"></i>
+                <p><span id="wind">21</span> km/saat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section-3">
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+        <div class="box">
+          <p>London</p>
+          <img src="./assets/img/animated/day.svg" alt="" />
+          <p class="temp">23<span>°C</span></p>
+        </div>
+      </section> -->
+    </main>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

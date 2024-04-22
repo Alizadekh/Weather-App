@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+  main {
+    width: 90% !important;
+  }
+  main .section-1 {
+    width: 100% !important;
+  }
+  main .section-2 .info-box .top {
+    flex-direction: column;
+  }
+  main .section-2 .info-box .top .intro {
+    width: 100% !important;
+  }
+  main .section-2 .info-box .top .intro p:last-child {
+    display: none;
+  }
+  main .section-2 .info-box .weather {
+    width: 100% !important;
+  }
+  main .section-2 .info-box .right {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */
