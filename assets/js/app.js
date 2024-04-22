@@ -72,7 +72,7 @@ function displayWeatherData(data) {
 
 function fetchData(location) {
   const apiKey = "6dac8d169c854c309dd150312242104";
-  const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
 
   fetch(apiUrl)
     .then((response) => {
