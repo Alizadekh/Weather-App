@@ -12,6 +12,7 @@ This is a simple weather application that displays the current weather informati
 - JavaScript
 - Fetch API
 - WeatherAPI
+- GeoLocationAPI
 # How to Use
 Open the application in a web browser.
 By default, the current weather information for Baku, Azerbaijan will be displayed.
