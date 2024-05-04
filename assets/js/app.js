@@ -70,25 +70,47 @@ function displayWeatherData(data) {
   infos.style.display = "block";
 }
 
-function fetchData(location) {
+async function fetchData(location) {
   const apiKey = "6dac8d169c854c309dd150312242104";
   const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
-
-  fetch(apiUrl)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not okey");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      displayWeatherData(data);
-      console.log(data);
-    })
-    .catch((error) => {
-      console.error(
-        "There has been a problem with your fetch operation:",
-        error
-      );
-    });
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+  displayWeatherData(data);
 }
+
+async function getLocation() {
+  return new Promise((resolve, reject) => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(resolve, reject);
+    }
+  });
+}
+
+async function getCityFromCoordinates(latitude, longitude) {
+  var apiUrl =
+    "https://nominatim.openstreetmap.org/reverse?format=json&lat=" +
+    latitude +
+    "&lon=" +
+    longitude;
+
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+  console.log(data);
+
+  var city = data.address.state_district;
+  console.log(city);
+  return city;
+}
+
+const gpsLoc = document.querySelector(".gpsLoc");
+
+gpsLoc.addEventListener("click", async function () {
+  const position = await getLocation();
+  const city = await getCityFromCoordinates(
+    position.coords.latitude,
+    position.coords.longitude
+  );
+  if (city) {
+    fetchData(city);
+  }
+});
